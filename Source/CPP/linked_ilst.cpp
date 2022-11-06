@@ -12,6 +12,7 @@ public:
     float float_value;
     node *next_address;
 
+    // usef when prepending or first node
     node()
     {
         index = 0;
@@ -22,6 +23,7 @@ public:
         next_address = NULL;
     }
 
+    // used for inserting and appending node
     node(int index_ip, int int_value_ip, string str_value_ip, double double_value_ip, float float_value_ip)
     {
         index = index_ip;
@@ -35,6 +37,33 @@ public:
 
 class Linked_list
 {
+public:
+    bool update_node()
+    {
+        return true;
+    }
+
+    bool append()
+    {
+        return true;
+    }
+
+    bool insert()
+    {
+        return true;
+    }
+
+    bool insert()
+    {
+        return true;
+    }
+
+    void print()
+    {
+
+    }
+
+    
 };
 
 int main()
