@@ -1,3 +1,8 @@
+/*
+    This Program is written by Sudhanwa Kaveeshwar
+    gitHub: https://github.com/sid-146
+*/
+
 #include <iostream>
 
 using namespace std;
@@ -37,6 +42,18 @@ public:
 
 class Linked_list
 {
+    node *start_head;
+
+    Linked_list()
+    {
+        start_head = NULL;
+    }
+
+    Linked_list(node *index)
+    {
+        start_head = index;
+    }
+
 public:
     bool update_node()
     {
