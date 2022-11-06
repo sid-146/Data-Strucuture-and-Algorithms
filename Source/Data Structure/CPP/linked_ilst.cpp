@@ -44,6 +44,23 @@ class Linked_list
 {
     node *start_head;
 
+    bool is_node_present(int index_ip)
+    {
+        // node *temp_holder = NULL;
+        node *traverser = start_head;
+
+        while(traverser != NULL)
+        {
+            if(traverser->index == index_ip)
+            {
+                return true;
+            }
+            traverser = traverser->next_address;
+        }
+        // return temp_holder;
+        return false;
+    }
+
     Linked_list()
     {
         start_head = NULL;
